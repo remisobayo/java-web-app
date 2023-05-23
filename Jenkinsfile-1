@@ -12,7 +12,7 @@ pipeline {
     }
     stage('Scan') {
       steps {
-        sh 'trivy remisobayo/java-web-app:latest'
+        sh 'trivy image remisobayo/java-web-app:latest'
       }
     }
   }
